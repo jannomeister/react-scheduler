@@ -1,11 +1,11 @@
 {
   "name": "@jannomeister/react-scheduler",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jannomeister/react-scheduler"
+    "url": "git+https://github.com/jannomeister/react-scheduler.git"
   },
   "keywords": [
     "scheduler",
