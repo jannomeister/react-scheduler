@@ -9,7 +9,7 @@
   <div align="center">
     <a href="https://bit.ly/react_scheduler">Youtube Tutorial</a>
     <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-    <a href="https://www.npmjs.com/package/@bitnoi.se/react-scheduler">npm</a>
+    <a href="https://www.npmjs.com/package/@jannomeister/react-scheduler">npm</a>
     <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
     <a href="https://github.com/Bitnoise/react-scheduler/issues/new">Report an issue</a>
   </div>
@@ -20,9 +20,9 @@
 
 ```bash
 # yarn
-yarn add '@bitnoi.se/react-scheduler'
+yarn add '@jannomeister/react-scheduler'
 # npm
-npm install '@bitnoi.se/react-scheduler'
+npm install '@jannomeister/react-scheduler'
 ```
 
 ### Example usage
@@ -30,13 +30,13 @@ npm install '@bitnoi.se/react-scheduler'
 1. import required styles for scheduler
 
 ```ts
-import "@bitnoi.se/react-scheduler/dist/style.css";
+import "@jannomeister/react-scheduler/dist/style.css";
 ```
 
 2. Import Scheduler component into your project
 
 ```ts
-import { Scheduler, SchedulerData } from "@bitnoi.se/react-scheduler";
+import { Scheduler, SchedulerData } from "@jannomeister/react-scheduler";
 
 default export function Component() {
   const [filterButtonState, setFilterButtonState] = useState(0);
@@ -179,14 +179,14 @@ item that will be visible on the grid as tile and that will be accessible as arg
 
 ### Troubleshooting
 
-- For using Scheduler with RemixJS make sure to add `@bitnoi.se/react-scheduler` to `serverDependenciesToBundle` in `remix.config.js` like so:
+- For using Scheduler with RemixJS make sure to add `@jannomeister/react-scheduler` to `serverDependenciesToBundle` in `remix.config.js` like so:
 
 ```js
 // remix.config.js
 /** @type  {import('@remix-run/dev').AppConfig} */
 module.exports = {
 	// ...
-	serverDependenciesToBundle: [..., "@bitnoi.se/react-scheduler"],
+	serverDependenciesToBundle: [..., "@jannomeister/react-scheduler"],
 };
 ```
 
@@ -194,7 +194,7 @@ module.exports = {
 
 ```ts
 "use client"
-import { Scheduler, SchedulerProps } from "@bitnoi.se/react-scheduler";
+import { Scheduler, SchedulerProps } from "@jannomeister/react-scheduler";
 
 default export function SchedulerClient(props: SchedulerProps) {
 	return <Scheduler {...props} />;
@@ -206,9 +206,12 @@ default export function SchedulerClient(props: SchedulerProps) {
 
 ```ts
 import dynamic from "next/dynamic";
-const Scheduler = dynamic(() => import("@bitnoi.se/react-scheduler").then((mod) => mod.Scheduler), {
-  ssr: false
-});
+const Scheduler = dynamic(
+  () => import("@jannomeister/react-scheduler").then((mod) => mod.Scheduler),
+  {
+    ssr: false
+  }
+);
 ```
 
 ### Known Issues
@@ -231,7 +234,7 @@ const Scheduler = dynamic(() => import("@bitnoi.se/react-scheduler").then((mod) 
 
 ### Contact
 
-If you have any questions or need further assistance, feel free to reach out to us at [scheduler@bitnoi.se](mailto:scheduler@bitnoi.se). We appreciate your contributions and thank you for helping us improve this project!
+If you have any questions or need further assistance, feel free to reach out to us at [scheduler@jannomeister](mailto:scheduler@jannomeister). We appreciate your contributions and thank you for helping us improve this project!
 
 ### License
 
