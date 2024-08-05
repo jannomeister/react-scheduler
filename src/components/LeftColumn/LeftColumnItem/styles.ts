@@ -50,8 +50,7 @@ export const StyledText = styled.p<StyledTextProps>`
   color: ${({ isMain }) => (isMain ? theme.colors.black : theme.colors.grey600)};
   text-overflow: ellipsis;
   display: inline-block;
-  max-width: 144px;
   width: 100%;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
 `;
