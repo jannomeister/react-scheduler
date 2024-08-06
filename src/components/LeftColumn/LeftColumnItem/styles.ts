@@ -51,6 +51,7 @@ export const StyledText = styled.p<StyledTextProps>`
   text-overflow: ellipsis;
   display: inline-block;
   width: 100%;
+  max-width: 144px;
   white-space: nowrap;
   overflow: hidden;
 `;
