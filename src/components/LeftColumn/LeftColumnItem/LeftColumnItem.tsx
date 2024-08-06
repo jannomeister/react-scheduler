@@ -5,6 +5,7 @@ import {
   StyledImageWrapper,
   StyledInnerWrapper,
   StyledText,
+  StyledTextTitle,
   StyledTextWrapper,
   StyledWrapper
 } from "./styles";
@@ -26,7 +27,7 @@ const LeftColumnItem: FC<LeftColumnItemProps> = ({ id, item, rows, onItemClick }
           )}
         </StyledImageWrapper>
         <StyledTextWrapper>
-          <StyledText isMain>{item.title}</StyledText>
+          <StyledTextTitle isMain>{item.title}</StyledTextTitle>
           <StyledText>{item.subtitle}</StyledText>
         </StyledTextWrapper>
       </StyledInnerWrapper>
