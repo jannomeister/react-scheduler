@@ -51,6 +51,19 @@ export const StyledText = styled.p<StyledTextProps>`
   text-overflow: ellipsis;
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+`;
+export const StyledTextTitle = styled.p<StyledTextProps>`
+  margin: 0;
+  padding: 0;
+  font-size: ${({ isMain }) => (isMain ? 0.75 + "rem" : 0.625 + "rem")};
+  letter-spacing: ${({ isMain }) => (isMain ? 1 + "px" : 0.5 + "px")};
+  line-height: ${({ isMain }) => (isMain ? 1.125 + "rem" : 0.75 + "rem")};
+  color: ${({ isMain }) => (isMain ? theme.colors.black : theme.colors.grey600)};
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100%;
   white-space: normal;
   overflow: hidden;
 `;
